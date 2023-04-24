@@ -1,0 +1,260 @@
+/*
+  *** Basic Styles ****
+*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Trebuchet MS', Helvetica, sans-serif;
+  background: #fff url(../imagens/fundo.png) repeat-x;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+h2 {
+  font-size: 1em;
+  background: #294c71;
+  color: #fff;
+  padding: 5px;
+}
+
+h3 {
+  text-transform: uppercase;
+  display: inline;
+  font-size: 0.8em;
+  padding: 3px;
+}
+
+a:link,
+a:visited {
+  color: #b10333;
+  padding: 2px;
+}
+
+a:hover {
+  color: #e50040;
+}
+
+label {
+  display: block;
+  cursor: pointer;
+}
+
+input {
+  padding: 5px;
+  width: 125px;
+  font-size: 0.9em;
+  background-color: #fff;
+}
+
+/*
+  *** Layout Strutucture Site ****
+*/
+
+.main {
+  width: 750px;
+  margin: 0 auto;
+}
+
+.header {
+  height: 150px;
+  background: url(../imagens/detalhe-topo.png) no-repeat right top;
+  padding-top: 25px;
+  /*border: 1px solid red;*/
+}
+
+.logo {
+  width: 152px;
+  height: 66px;
+  background: url(../imagens/logo.png) no-repeat center;
+  text-indent: -3000px;
+}
+
+/* Barra de navegação
+*/
+
+.menu {
+  margin-top: 30px;
+  background: #b10333;
+  float: left;
+}
+
+.menu__item {
+  float: left;
+}
+
+.menu__link:link,
+.menu__link:visited,
+.menu__link {
+  font-size: 0.9em;
+  display: block;
+  padding: 0.5em 1.5em;
+  line-height: 2.1em;
+  text-decoration: none;
+  color: #fff;
+  background: url(../imagens/divisor.png) no-repeat left center;
+}
+
+.menu__link:hover {
+  color: #69001d;
+}
+
+.menu__item:first-of-type .menu__link {
+  background: none;
+}
+
+/* Select active menu link of page */
+body.home #home,
+body.brasil #brasil,
+body.internacional #internacional,
+body.economia #economia,
+body.saude #saude,
+body.ciencia #ciencia,
+body.fotos #fotos {
+  color: #fff;
+  background: #de003e;
+  cursor: text;
+}
+
+/* Configura layout de três colunas */
+.content {
+  margin-top: 60px;
+  background: #f5f5f5;
+}
+
+.sidebar {
+  width: 180px;
+  float: left;
+  margin: 0 0 20px -750px;
+}
+
+.content__first {
+  width: 270px;
+  float: left;
+  margin: 0 0 20px 195px;
+}
+
+.column--two .content__first {
+  width: 555px;
+}
+
+.column--one .content__first {
+  width: 750px;
+  margin: 0 0 20px 0;
+}
+
+.content__second {
+  width: 270px;
+  float: left;
+  margin: 0 0 20px 15px;
+}
+
+/*box*/
+.box {
+  margin: 10px 0;
+  padding: 5px;
+  background: #f3f3f3 url(../imagens/fundo-box.png);
+}
+
+.box__content {
+  background: #fff;
+  padding: 5px;
+  margin-top: 5px;
+}
+
+/* Formatar menus laterais
+*/
+.sidebar .link {
+  font-size: 0.9em;
+  padding: 3px;
+  display: block;
+  line-height: 30px;
+  color: #000;
+  text-decoration: none;
+  border-bottom: 1px solid #f3f3f3;
+}
+
+.sidebar .link:hover {
+  background: #f9f9f9 url(../imagens/marcador.png) no-repeat left center;
+  padding-left: 20px;
+  color: #a1a1a1;
+}
+
+/* Formatando formulários
+*/
+
+input.submit {
+  width: 80px;
+  color: #fff;
+  background-color: #b10333;
+  border: 2px solid #870529;
+}
+
+/*Formatando imagens*/
+img.box__image {
+  width: 98%;
+  border: 3px solid #dfdfdf;
+}
+
+/* Formatando cabeçalhos */
+
+.box__title--highlight {
+  background: #b10333;
+  color: #fff;
+}
+
+.box__title--interview {
+  background: #de003e;
+}
+
+/*Formatando lista de notícias*/
+.news__item {
+  padding: 2px;
+  border-bottom: 1px solid #ccc;
+  height: 62px;
+}
+
+.news__item:hover {
+  background: #eee;
+  cursor: pointer;
+}
+
+.news__link {
+  text-decoration: none;
+}
+
+.news__image {
+  float: left;
+  margin: 5px;
+}
+
+.news__title {
+  font-size: 0.8em;
+  padding: 0;
+  color: #3e7ab9;
+}
+
+.news__resume {
+  font-size: 0.7em;
+  color: #000;
+}
+
+/*Rodape*/
+.footer {
+  background: #294c71;
+  padding: 20px;
+  clear: both;
+}
+
+.footer__copy {
+  width: 750px;
+  margin: 0 auto;
+  color: #fff;
+  text-align: center;
+}
